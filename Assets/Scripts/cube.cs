@@ -15,6 +15,6 @@ public class movement : MonoBehaviour
     void Update()
     {
         // Moves the object. (it wont fucking move)
-        transform.position += new Vector3(-10, 10, 0) * speed * Time.deltaTime;
+        transform.position += new Vector3(-3, 3, 0) * speed * Time.deltaTime;
     }
 }
