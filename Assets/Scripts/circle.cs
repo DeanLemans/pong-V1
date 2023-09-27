@@ -15,4 +15,11 @@ public class circle : MonoBehaviour
     {
         transform.position += new Vector3(3, 3, 6) * speed * Time.deltaTime;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision != null) {
+            Debug.Log("auw");
+        }
+    }
 }
