@@ -19,8 +19,8 @@ public class circle : MonoBehaviour
     void Update()
     {
         transform.position = new Vector3(xPosition, yPosition, 0f);
-        xPosition += xSpeed * Time.deltaTime;
-        yPosition += ySpeed * Time.deltaTime;
+        xPosition = xPosition + xSpeed * Time.deltaTime; //not optimized
+        yPosition += ySpeed * Time.deltaTime; //optimized
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

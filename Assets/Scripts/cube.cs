@@ -8,6 +8,7 @@ public class movement : MonoBehaviour
     public float yPosition = 3f;
     public float xSpeed = 1f;
     public float ySpeed = 1f;
+    public float speed = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,7 @@ public class movement : MonoBehaviour
     void Update()
     {
         // Moves the object. (it wont fucking move)
-        transform.position += new Vector3(xPosition, yPosition, 0f) * ySpeed * Time.deltaTime; //google found method
+        transform.position += new Vector3(xPosition, yPosition, 0f) * speed * Time.deltaTime; //google found method
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -18,7 +18,7 @@ public class triangle : MonoBehaviour
     // Update is called once per frame
     void Update()  
     {
-        transform.position += new Vector3(xPosition, yPosition, 0f) * Time.deltaTime;
+        transform.position += new Vector3(xPosition, yPosition, 0f) * Time.deltaTime; //edited google found method
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

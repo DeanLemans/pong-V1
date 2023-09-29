@@ -19,8 +19,8 @@ public class diamond : MonoBehaviour
     void Update()
     {
         transform.position = new Vector3(xPosition, yPosition, 0f);
-        xPosition += xSpeed * Time.deltaTime; //optimised
-        yPosition += yPosition + ySpeed * Time.deltaTime; //not optimised
+        xPosition += xSpeed * Time.deltaTime; //optimized
+        yPosition += yPosition + ySpeed * Time.deltaTime; //not optimized
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
