@@ -4,18 +4,23 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
+    public float speed = 1f;
+    public float xPosition = 5f;
+    public float yPosition = 3f;
+
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(-4,-3,0);
+     
     }
 
     // Update is called once per frame
-    public float speed = 1;
     void Update()
     {
         // Moves the object. (it wont fucking move)
-        transform.position += new Vector3(-3, 3) * speed * Time.deltaTime;
+        transform.position = new Vector3(xPosition, yPosition, 0f);
+        xPosition += 0.001f;
+        yPosition += 0.005f;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
