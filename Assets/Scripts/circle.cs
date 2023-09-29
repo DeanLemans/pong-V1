@@ -9,7 +9,7 @@ public class circle : MonoBehaviour
     {
         
     }
-    public float speed = 3;
+    public float speed = 1;
     // Update is called once per frame
     void Update()
     {
