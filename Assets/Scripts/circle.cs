@@ -13,7 +13,7 @@ public class circle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(3, 3, 6) * speed * Time.deltaTime;
+        transform.position += new Vector3(3, 3) * speed * Time.deltaTime;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

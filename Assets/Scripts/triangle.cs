@@ -10,11 +10,11 @@ public class triangle : MonoBehaviour
         
     }
 
-    public float speed = 2;
+    public float speed = 1;
     // Update is called once per frame
     void Update()  
     {
-        transform.position += new Vector3(-3, 5, 3) * speed * Time.deltaTime;
+        transform.position += new Vector3(-3, 5) * speed * Time.deltaTime;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
