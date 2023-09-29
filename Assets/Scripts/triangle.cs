@@ -16,4 +16,12 @@ public class triangle : MonoBehaviour
     {
         transform.position += new Vector3(-3, 5, 3) * speed * Time.deltaTime;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision != null)
+        {
+            Debug.Log("The fog is comming.");
+        }
+    }
 }

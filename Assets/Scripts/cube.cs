@@ -17,4 +17,12 @@ public class movement : MonoBehaviour
         // Moves the object. (it wont fucking move)
         transform.position += new Vector3(-3, 3, 0) * speed * Time.deltaTime;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision != null)
+        {
+            Debug.Log("Fuck!");
+        }
+    }
 }
