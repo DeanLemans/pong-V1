@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
-    public float speed = 1f;
     public float xPosition = 5f;
     public float yPosition = 3f;
+    public float xSpeed = 1f;
+    public float ySpeed = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -18,9 +19,7 @@ public class movement : MonoBehaviour
     void Update()
     {
         // Moves the object. (it wont fucking move)
-        transform.position = new Vector3(xPosition, yPosition, 0f);
-        xPosition += 0.001f;
-        yPosition += 0.005f;
+        transform.position += new Vector3(xPosition, yPosition, 0f) * ySpeed * Time.deltaTime; //google found method
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

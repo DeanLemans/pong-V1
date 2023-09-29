@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class triangle : MonoBehaviour
 {
-    public float speed = 1f;
     public float xPosition = 2f;
     public float yPosition = -3f;
+    public float xSpeed = 1f;
+    public float ySpeed = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,7 @@ public class triangle : MonoBehaviour
     // Update is called once per frame
     void Update()  
     {
-        transform.position += new Vector3(xPosition, yPosition, 0f) * speed * Time.deltaTime;
+        transform.position += new Vector3(xPosition, yPosition, 0f) * Time.deltaTime;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
