@@ -205,7 +205,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.28, y: 0.2590291, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -222,9 +222,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b52aeefb8fbce4a84d39a5c924944b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
   xPosition: -2
   yPosition: -3
+  xSpeed: 1
+  ySpeed: 1
 --- !u!50 &269635931
 Rigidbody2D:
   serializedVersion: 4
@@ -460,9 +461,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca8d133d4e8d81c469723392116893cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
   xPosition: -2
   yPosition: -3
+  xSpeed: 1
+  ySpeed: 1
 --- !u!212 &654748944
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -525,7 +527,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.31, y: 0.56, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -674,7 +676,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -691,9 +693,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f36c20e1c759054a9b0ebacbf167723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
   xPosition: 5
   yPosition: 3
+  xSpeed: 1
+  ySpeed: 1
+  speed: 1
 --- !u!50 &696913131
 Rigidbody2D:
   serializedVersion: 4
@@ -1164,7 +1168,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.17, y: -0.73, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1181,9 +1185,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9158af1d285f6274791ac12e58a42439, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
   xPosition: 2
   yPosition: 3
+  xSpeed: 1
+  ySpeed: 1
 --- !u!50 &1220932522
 Rigidbody2D:
   serializedVersion: 4
