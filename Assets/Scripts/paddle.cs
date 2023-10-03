@@ -6,16 +6,16 @@ public class paddle : MonoBehaviour
 {
     public float speed = 5f;
     public string leftOrRight;
-
+    public float maxValue = 3.6f;
 
     void paddleControl(KeyCode up,KeyCode down) 
     {
-        if (Input.GetKey(up))
+        if (Input.GetKey(up) && transform.position.y > maxValue)
         {
             Debug.Log("fuck you");
             transform.Translate(Vector3.up * speed * Time.deltaTime);
         }
-        else if (Input.GetKey(down))
+        else if (Input.GetKey(down) && transform.position.y > maxValue)
         {
             Debug.Log("fuck of dipshit");
             transform.Translate(Vector3.down * speed * Time.deltaTime);
