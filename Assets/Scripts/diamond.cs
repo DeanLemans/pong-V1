@@ -25,9 +25,6 @@ public class diamond : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision != null)
-        {
-            Debug.Log("Shine bright like a diamond!");
-        }
+        Debug.Log("Shine bright like a diamond!");
     }
 }

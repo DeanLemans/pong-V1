@@ -25,7 +25,7 @@ public class movement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision != null)
+        if (collision.gameObject.CompareTag(""))
         {
             Debug.Log("Fuck!");
         }
