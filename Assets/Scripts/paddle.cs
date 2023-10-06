@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class paddle : MonoBehaviour
 {
-    public float speed = 5f;
+    public float speed = 6f;
     public string leftOrRight;
     public float maxValue = 3.3f;
 

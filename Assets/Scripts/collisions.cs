@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Dynamic;
 using UnityEngine;
 
 public class collisions : MonoBehaviour
@@ -37,4 +38,6 @@ public class collisions : MonoBehaviour
             xSpeed = xSpeed * -1f;
         }
     }
-}
+
+  
+    }
