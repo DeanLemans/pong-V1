@@ -6,7 +6,7 @@ public class paddle : MonoBehaviour
 {
     public float speed = 5f;
     public string leftOrRight;
-    public float maxValue = 3.5f;
+    public float maxValue = 3.3f;
 
     void paddleControl(KeyCode up,KeyCode down) 
     {
