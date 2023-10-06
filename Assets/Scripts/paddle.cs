@@ -10,12 +10,12 @@ public class paddle : MonoBehaviour
 
     void paddleControl(KeyCode up,KeyCode down) 
     {
-        if (Input.GetKey(up) && transform.position.y > maxValue)
+        if (Input.GetKey(up) && transform.position.y < maxValue)
         {
             Debug.Log("fuck you");
             transform.Translate(Vector3.up * speed * Time.deltaTime);
         }
-        else if (Input.GetKey(down) && transform.position.y > maxValue)
+        else if (Input.GetKey(down) && transform.position.y > -maxValue)
         {
             Debug.Log("fuck of dipshit");
             transform.Translate(Vector3.down * speed * Time.deltaTime);
