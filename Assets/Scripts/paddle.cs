@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class paddle : MonoBehaviour
 {
-    public float speed = 6f;
+    public float speed = 7f;
     public string leftOrRight;
-    public float maxValue = 3.3f;
+    public float maxValue = 4f;
 
     void paddleControl(KeyCode up,KeyCode down) 
     {
