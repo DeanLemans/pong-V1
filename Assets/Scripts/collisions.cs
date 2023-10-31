@@ -14,18 +14,20 @@ public class collisions : MonoBehaviour
     public int leftScore = 0;
     public int rightScore = 0;
     public int topScore = 5;
+    private float baseLineSpeed;
 
     void resetBall()
     {
         xPosition = 0f;
         yPosition = Random.Range(-2f,-2f);
-        xSpeed = xSpeed * -1f;
-        ySpeed = ySpeed * -1f;
+        xSpeed = baseLineSpeed;
+        ySpeed =baseLineSpeed;
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        baseLineSpeed = xSpeed;
         transform.position = new Vector3(xPosition, yPosition, 0f);
     }
 
