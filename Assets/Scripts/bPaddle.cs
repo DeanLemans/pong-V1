@@ -38,19 +38,18 @@ public class bPaddle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+            Botpaddle();
     }
     void Botpaddle()
     {
         transform.position = new Vector3(botXPosition, botYPosition, 0f);
-        //transform.position = new Vector3(transform.position.x, ball.transform.position.y, 0f);
-        //bot up
-        if (square.transform.position.y > square.transform.position.y && transform.position.y < maxValue)
+        
+        if (square.transform.position.y > paddleRight.transform.position.y && transform.position.y < maxValue)
         {
             botYPosition += botSpeed * Time.deltaTime;
         }
-        //bot down
-        else if (square.transform.position.y < square.transform.position.y && transform.position.y > -maxValue)
+        
+        else if (square.transform.position.y < paddleRight.transform.position.y && transform.position.y > -maxValue)
         {
             botYPosition += -botSpeed * Time.deltaTime;
         }

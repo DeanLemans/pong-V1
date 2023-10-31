@@ -811,8 +811,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c82b92040d395ad44af760414fe6ce4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
-  leftOrRight: 
+  speed: 5
+  leftOrRight: left
   maxValue: 4
 --- !u!1 &715667174
 GameObject:
@@ -1507,7 +1507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c82b92040d395ad44af760414fe6ce4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 5
   leftOrRight: right
   maxValue: 4
 --- !u!1660057539 &9223372036854775807
