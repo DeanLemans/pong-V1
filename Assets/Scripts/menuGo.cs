@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class menuGo : MonoBehaviour
 {
@@ -13,6 +14,17 @@ public class menuGo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.Alpha1))
+        {
+            SceneManager.LoadScene("Normal");
+        }
+        else if (Input.GetKey(KeyCode.Alpha2))
+        {
+            SceneManager.LoadScene("Bot");
+        }
+        else if (Input.GetKey(KeyCode.Alpha3))
+        {
+            SceneManager.LoadScene("Mystery");
+        }
     }
 }
