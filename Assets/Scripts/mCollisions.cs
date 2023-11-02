@@ -53,7 +53,7 @@ public class mCollisions : MonoBehaviour
     }
 
 
-    // increasing the points and also increasing the speed everytime the ball touches one of the paddles.
+    // updating the points and also increasing the speed everytime the ball touches one of the paddles.
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("now you bounce");
