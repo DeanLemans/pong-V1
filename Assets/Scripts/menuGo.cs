@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class menuGo : MonoBehaviour
 {
     
-    //making the buttons go to a different scene
+    //using the scenemanager to load differnt scenes via the keypad123 or the alpha123.
     void Update()
     {
         if (Input.GetKey(KeyCode.Alpha1) || Input.GetKey(KeyCode.Keypad1))  

@@ -27,7 +27,7 @@ public class mCollisions : MonoBehaviour
     }
 
     // Start is called before the first frame update
-   //setting where the ball should spawn and also setting the baseline speed
+    //setting where the ball should spawn and also reseting to the baselineSpeed.
     void Start()
     {
         baseLineSpeed = xSpeed;
@@ -35,7 +35,7 @@ public class mCollisions : MonoBehaviour
     }
 
     // Update is called once per frame
-    //checking score for wich player has one and changing the text to reflect that.
+    //checking score for wich player has won and changing the text to reflect that.
     void Update()
     {
 

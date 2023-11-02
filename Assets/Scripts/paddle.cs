@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class paddle : MonoBehaviour
 {
-    //variables
+    //variables.
     public float speed = 7f;
     public string leftOrRight;
     public float maxValue = 4f;
@@ -26,7 +26,7 @@ public class paddle : MonoBehaviour
     }
 
     // Update is called once per frame
-    // checking wich control sceme should be used
+    // checking wich control scheme should be used.
     void Update()
     {
         if (leftOrRight == "left")

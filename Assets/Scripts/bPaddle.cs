@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class bPaddle : MonoBehaviour
 {
-    //variables
+    //variables.
     public float speed = 7f;
     public string leftOrRight;
     public float maxValue = 7f;
@@ -22,7 +22,7 @@ public class bPaddle : MonoBehaviour
             Botpaddle();
     }
 
-    //making the paddle follow the gameobject square, bot
+    //making the paddle follow the gameobject square, bot.
     void Botpaddle()
     {
         transform.position = new Vector3(botXPosition, botYPosition, 0f);

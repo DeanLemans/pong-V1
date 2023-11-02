@@ -18,7 +18,7 @@ public class collisions : MonoBehaviour
     private float baseLineSpeed;
 
 
-    //reset the ball to a random point in middle and also returing to original speed
+    //reset the ball to a random point in middle and also reseting to the baselineSpeed.
     void resetBall()
     {
         xPosition = 0f;
@@ -28,7 +28,7 @@ public class collisions : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    //giving baseline speed for reseting the ball speed everytime a point is scored
+    //giving baseline speed for reseting the ball speed everytime a point is scored.
     void Start()
     {
         baseLineSpeed = xSpeed;
@@ -36,7 +36,7 @@ public class collisions : MonoBehaviour
     }
 
     // Update is called once per frame
-    //checking score for wich player has one and changing the text to reflect that.
+    //checking score for wich player has won and changing the text to reflect that.
     void Update()
     {
         
