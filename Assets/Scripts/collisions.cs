@@ -6,6 +6,7 @@ using TMPro;
 
 public class collisions : MonoBehaviour
 {
+    //variables
     public float xPosition = -2f;
     public float yPosition = -3f;
     public float xSpeed = 5f;
@@ -16,15 +17,18 @@ public class collisions : MonoBehaviour
     public int topScore = 5;
     private float baseLineSpeed;
 
+
+    //reset the ball to a random point in middle and also returing to original speed
     void resetBall()
     {
         xPosition = 0f;
         yPosition = Random.Range(-2f,-2f);
         xSpeed = baseLineSpeed;
-        ySpeed =baseLineSpeed;
+        ySpeed = baseLineSpeed;
     }
 
     // Start is called before the first frame update
+    //giving baseline speed for reseting the ball speed everytime a point is scored
     void Start()
     {
         baseLineSpeed = xSpeed;
@@ -32,6 +36,7 @@ public class collisions : MonoBehaviour
     }
 
     // Update is called once per frame
+    //checking score for wich player has one and changing the text to reflect that.
     void Update()
     {
         
@@ -48,6 +53,8 @@ public class collisions : MonoBehaviour
         }
     }
 
+
+    // increasing/decreasing the points and also increasing the speed everytime the ball touches one of the paddles.
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("now you bounce");

@@ -4,42 +4,25 @@ using UnityEngine;
 
 public class bPaddle : MonoBehaviour
 {
+    //variables
     public float speed = 7f;
     public string leftOrRight;
     public float maxValue = 7f;
-
     public float botSpeed = 4f;
     public float botYPosition = 0f;
     public float botXPosition;
     public GameObject square;
-    public GameObject paddleLeft;
     public GameObject paddleRight;
 
-
-    void paddleControl(KeyCode up, KeyCode down)
-    {
-        if (Input.GetKey(up) && transform.position.y < maxValue)
-        {
-            Debug.Log("fuck you");
-            transform.Translate(Vector3.up * speed * Time.deltaTime);
-        }
-        else if (Input.GetKey(down) && transform.position.y > -maxValue)
-        {
-            Debug.Log("fuck of dipshit");
-            transform.Translate(Vector3.down * speed * Time.deltaTime);
-        }
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
+        // calling the method botpaddle
             Botpaddle();
     }
+
+    //making the paddle follow the gameobject square, bot
     void Botpaddle()
     {
         transform.position = new Vector3(botXPosition, botYPosition, 0f);

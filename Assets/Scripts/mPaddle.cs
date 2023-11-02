@@ -5,18 +5,12 @@ using UnityEngine.UIElements;
 
 public class mPaddle : MonoBehaviour
 {
+    //variables
     public float speed = 5;
     public string leftOrRight;
     public float maxValue = 4f;
 
-    
-    void Start()
-    {
-        
-    }
-    
-
-
+    //controlling the paddle.
     void paddleControl(KeyCode up, KeyCode down)
     {
         if (Input.GetKey(down) && transform.position.y < maxValue)
@@ -32,9 +26,9 @@ public class mPaddle : MonoBehaviour
     }
 
     // Update is called once per frame
+    // checking wich control sceme should be used
     void Update()
     {
-        var speed = Random.Range(3, 9);
         if (leftOrRight == "left")
         {
             paddleControl(KeyCode.W, KeyCode.S);
