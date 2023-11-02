@@ -10,23 +10,28 @@ public class mPaddle : MonoBehaviour
     public string leftOrRight;
     public float maxValue = 4f;
 
-    //controlling the paddle.
+ 
+    /// <summary>
+    /// using up and down keycodes to change position of paddle
+    /// </summary>
+    /// <param name="up"></param>
+    /// <param name="down"></param>
     void paddleControl(KeyCode up, KeyCode down)
     {
         if (Input.GetKey(down) && transform.position.y < maxValue)
         {
-            Debug.Log("fuck you");
             transform.Translate(Vector3.up * speed * Time.deltaTime);
         }
         else if (Input.GetKey(up) && transform.position.y > -maxValue)
         {
-            Debug.Log("fuck of dipshit");
             transform.Translate(Vector3.down * speed * Time.deltaTime);
         }
     }
 
-    // Update is called once per frame
-    // checking wich control scheme should be used.
+    /// <summary>
+    /// Update is called once per frame
+    /// checking wich control scheme should be used.
+    /// </summary>
     void Update()
     {
         if (leftOrRight == "left")
